@@ -23,7 +23,7 @@
     
             <main>
                 <div class="d-flex justify-content-center mb-5 ms_filter">
-                    <span>Genere: </span>
+                    <span>Genere:</span>
                     <select v-model="genreValue" @change="filterGenre">
                         <option disabled value="">Scegli un genere</option>
                         <option value="All">All</option>
