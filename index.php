@@ -22,7 +22,7 @@
             </header>
     
             <main>
-                <div class="d-flex justify-content-center ms_filter">
+                <div class="d-flex justify-content-center mb-5 ms_filter">
                     <span>Genere: </span>
                     <select v-model="genreValue" @change="filterGenre">
                         <option disabled value="">Scegli un genere</option>
@@ -32,9 +32,7 @@
                         <option value="Pop">Pop</option>
                         <option value="Rock">Rock</option>
                     </select>
-                </div>
-
-                <div class="d-flex justify-content-center ms_filter" >
+                    
                     <span>Artista:</span>
                     <select v-model="artistValue" @change="filterArtist">
                         <option disabled value="">Scegli un artista</option>
@@ -51,6 +49,7 @@
                         <option value="Michael Jacjson">Michael Jacjson</option>
                     </select>
                 </div>
+
 
                 <div class="container d-flex justify-content-start flex-wrap">
                     <div class="ms_song-card" v-for="song in filteredDiscList">
