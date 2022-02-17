@@ -22,8 +22,8 @@
             </header>
     
             <main>
-                <div v-for="song in discList">
-                    <div class="ms_song-card">
+                <div class="container d-flex justify-content-between flex-wrap">
+                    <div class="ms_song-card" v-for="song in discList">
                         <img :src="song.poster" :alt="song.title">
                         <h1>
                             {{song.title.toUpperCase()}}

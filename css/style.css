@@ -1,0 +1,50 @@
+/* HEADER STYLING --------------------------------------- */
+
+header {
+    background-color: #2e3a46;
+    height: 80px;
+    padding: 10px 15px;
+}
+
+header img {
+    height: 100%;
+}
+
+
+/* MAIN STYLING ---------------------------------------- */
+
+main {
+    background-color: #1e2d3b;
+    padding: 50px 0 100px;
+}
+
+/* SONG CARD STYLING ------------------------------------ */
+
+.ms_song-card {
+    background-color: #2e3a46;
+    padding: 20px;
+    width: calc((100% - 100px) / 5);
+    text-align: center;
+    margin: 10px;
+
+}
+
+.ms_song-card img {
+    width: 100%;
+}
+
+.ms_song-card h1 {
+    color: #fff;
+    font-size: 24px;
+    margin: 20px;
+    font-weight: bold;
+}
+
+.ms_author {
+    color: #888;
+}
+
+.ms_author p {
+    margin: 0;
+    font-size: 20px;
+}
