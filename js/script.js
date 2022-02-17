@@ -3,7 +3,8 @@ new Vue({
     data: {
         discList: [],
         filteredDiscList: [],
-        value: '',
+        genreValue: '',
+        artistValue: '',
     },
     mounted() {
         axios.get("http://localhost/esercizi/php-ajax-dischi/api.php")
@@ -15,8 +16,13 @@ new Vue({
     methods: {
         filterGenre() {
             this.filteredDiscList = this.discList.filter((disco) => {
-            return disco.genre === this.value || this.value === 'All';
+            return disco.genre === this.genreValue || this.genreValue === 'All';
             });
-        }
+        },
+        filterArtist() {
+            this.filteredDiscList = this.discList.filter((disco) => {
+              return disco.author === this.artistValue || this.artistValue === 'All';
+            });
+          },
     }
 });
