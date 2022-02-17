@@ -1,7 +1,3 @@
-<?php 
-
-?>
-
 <!DOCTYPE html>
     <html lang="en">
     <head>
@@ -15,14 +11,16 @@
         <title>PHP-AJAX DISCHI</title>
     </head>
     <body>
-
         <div id="app">
             <header>
                 <img src="./img/spotify-logo.png" alt="spotify-logo">
             </header>
     
             <main>
+                <!-- filters  -->
                 <div class="d-flex justify-content-center mb-5 ms_filter">
+
+                    <!-- genre filter -->
                     <span>Genere:</span>
                     <select v-model="genreValue" @change="filterGenre">
                         <option disabled value="">Scegli un genere</option>
@@ -33,6 +31,7 @@
                         <option value="Rock">Rock</option>
                     </select>
                     
+                    <!-- artist filter -->
                     <span>Artista:</span>
                     <select v-model="artistValue" @change="filterArtist">
                         <option disabled value="">Scegli un artista</option>
@@ -49,8 +48,9 @@
                         <option value="Michael Jacjson">Michael Jacjson</option>
                     </select>
                 </div>
+                <!-- / filters  -->
 
-
+                <!-- song card  -->
                 <div class="container d-flex justify-content-start flex-wrap">
                     <div class="ms_song-card" v-for="song in filteredDiscList">
                         <img :src="song.poster" :alt="song.title">
@@ -63,6 +63,8 @@
                         </div>
                     </div>
                 </div>
+                <!-- / song card  -->
+
             </main>
         </div>
         
