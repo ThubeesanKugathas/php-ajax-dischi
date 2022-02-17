@@ -48,3 +48,21 @@ main {
     margin: 0;
     font-size: 20px;
 }
+
+/* FILTER STYLING */
+
+.ms_filter {
+    background-color: #1e2d3b;
+    text-align: center;
+    color: #fff;
+    padding-top: 50px;
+    font-size: 25px;
+    
+}
+.ms_filter select {
+    margin: 0 20px;
+}
+
+.ms_filter span {
+    margin: 0 20px;
+}

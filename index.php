@@ -22,8 +22,20 @@
             </header>
     
             <main>
-                <div class="container d-flex justify-content-between flex-wrap">
-                    <div class="ms_song-card" v-for="song in discList">
+                <div class="d-flex justify-content-center ms_filter">
+                    <span>Genere: </span>
+                    <select v-model="value" @change="filterGenre">
+                        <option disabled value="">Scegli un genere</option>
+                        <option value="All">All</option>
+                        <option value="Jazz">Jazz</option>
+                        <option value="Metal">Metal</option>
+                        <option value="Pop">Pop</option>
+                        <option value="Rock">Rock</option>
+                    </select>
+                </div>
+
+                <div class="container d-flex justify-content-start flex-wrap">
+                    <div class="ms_song-card" v-for="song in filteredDiscList">
                         <img :src="song.poster" :alt="song.title">
                         <h1>
                             {{song.title.toUpperCase()}}
