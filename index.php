@@ -12,6 +12,7 @@
     </head>
     <body>
         <div id="app">
+            
             <header>
                 <img src="./img/spotify-logo.png" alt="spotify-logo">
             </header>
@@ -64,10 +65,8 @@
                     </div>
                 </div>
                 <!-- / song card  -->
-
             </main>
         </div>
-        
 
         <script src="js/script.js"></script>
     </body>
